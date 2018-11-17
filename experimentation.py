@@ -1,11 +1,12 @@
 from gensim.models import KeyedVectors
 # load the google word2vec model
-filename = '../GoogleNews-vectors-negative300.bin'
+filename = 'GoogleNews-vectors-negative300.bin.gz'
 model = KeyedVectors.load_word2vec_format(filename, binary=True, limit=18000)
 
 wordSet = model.wv.vocab.keys()
 
 wordVectorDict = {}
+
 
 for word in wordSet:
     wordVectorDict[word] = [float(i) for i in model[word]]
