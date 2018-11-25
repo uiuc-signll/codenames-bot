@@ -2,7 +2,7 @@ from gensim.models import KeyedVectors
 
 # load the google word2vec model
 filename = 'GoogleNews-vectors-negative300.bin.gz'
-model = KeyedVectors.load_word2vec_format(filename, binary=True, limit= 200000)
+model = KeyedVectors.load_word2vec_format(filename, binary = True, limit = 200000)
 
 def find_max(opposing, in_word):
     max = -1
