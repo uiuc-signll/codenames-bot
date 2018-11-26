@@ -1,0 +1,62 @@
+Input (gameWords.txt):
+
+earth
+friend
+business
+officer
+competition
+president
+cell
+death
+manhole
+unit
+vortex
+university
+month
+organism
+colony
+ballet
+builder
+complaint
+lighthouse
+bulb
+vessel
+chemistry
+pollen
+footman
+member
+
+Output (cluesGenerated.txt):
+
+
+-----------------------------
+
+-----------------------------
+
+-----------------------------
+('semester', ['university', 'month'], [0.5215966, 0.34777808], 0.869374692440033)
+('species', ['organism', 'colony'], [0.51659745, 0.31405005], 0.8306474983692169)
+('athletic', ['university', 'ballet'], [0.37259093, 0.28782958], 0.6604205071926117)
+('teaching', ['university', 'ballet'], [0.3846627, 0.26973706], 0.6543997526168823)
+('populations', ['organism', 'colony'], [0.29016644, 0.3505705], 0.6407369375228882)
+('phenomenon', ['vortex', 'organism'], [0.37883407, 0.25907835], 0.6379124224185944)
+('habitat', ['organism', 'colony'], [0.29835114, 0.33918414], 0.6375352740287781)
+('zoo', ['university', 'colony'], [0.33583537, 0.27858964], 0.614425003528595)
+('classes', ['university', 'ballet'], [0.2990064, 0.30659208], 0.6055984795093536)
+('##th_century', ['colony', 'ballet'], [0.34107772, 0.25945678], 0.6005344986915588)
+
+-----------------------------
+('museum', ['university', 'colony', 'ballet'], [0.31761947, 0.2621991, 0.2661332], 0.8459517657756805)
+('batch', ['unit', 'month', 'colony'], [0.21876727, 0.27097133, 0.18013099], 0.6698695868253708)
+
+-----------------------------
+
+-----------------------------
+
+-----------------------------
+
+-----------------------------
+
+-----------------------------
+
+-----------------------------
