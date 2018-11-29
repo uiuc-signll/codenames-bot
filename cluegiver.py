@@ -33,19 +33,24 @@ def clueSearch(potentialClues, goodWords, badWords, assasin):
 
 with open('gameWords.txt') as gameWords:
     # This txt file should contain 25 lines, each containing one word
+    team = gameWords.readline().rstrip('\n')
+    labels = gameWords.readline().rstrip('\n')
     words = [i.rstrip('\n') for i in gameWords.readlines()[:25]]
-
-labels = "RRRRRRRRRBBBBBBBBNNNNNNNA"
 
 redWords = [words[i] for i in range(25) if labels[i] == 'R']
 blueWords = [words[i] for i in range(25) if labels[i] == 'B']
 
 potentialClues = list(model.vocab.keys())[:10000]
 
+if team == 'red':
+    searchResults = clueSearch(potentialClues, redWords, blueWords, '')
+else:
+    searchResults = clueSearch(potentialClues, blueWords, redWords, '')
+
 with open('cluesGenerated.txt', 'w') as file:
-    for clueList in clueSearch(potentialClues, blueWords, redWords, ''):
+    for clueList in searchResults:
         file.write('\n-----------------------------\n')
-        for clueInfo in clueList[:10]:
+        for clueInfo in clueList:
             file.write(str(clueInfo) + '\n')
 
 print('Done!')

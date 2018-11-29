@@ -1,5 +1,7 @@
 Input (gameWords.txt):
 
+blue
+RRRRRRRRRBBBBBBBBNNNNNNNA
 earth
 friend
 business
